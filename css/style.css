@@ -21,7 +21,8 @@
 .container {
 	width: 80%;
 	margin-inline: auto;
-	padding: var(--section-padding);
+	padding-block: var(--section-padding);
+	padding-inline: 40px;
 }
 .colored-section {
 	background-color: var(--section-background);
@@ -369,7 +370,8 @@ svg {
 @media screen and (max-width: 720px) {
 	/* || GLOBAL */
 	.container {
-		width: 99%;
+		width: 85%;
+		padding-inline: 10px;
 	}
 	.special-heading {
 		font-size: 3rem;
@@ -377,6 +379,22 @@ svg {
 	.heading-title {
 		margin-top: -0.9rem;
 		font-size: 1rem;
+	}
+
+	/* || LANDING */
+	.landing h2 {
+		font-size: 1.5rem;
+		color: var(--main-color);
+		font-weight: bold;
+	}
+	.landing p {
+		font-size: 1rem;
+		line-height: 2;
+	}
+
+	/* || FEATURES */
+	.features__data {
+		grid-template-columns: minmax(100px, 1fr);
 	}
 
 	/* || SERVICES */
@@ -396,6 +414,11 @@ svg {
 	}
 	.portfolio .portfolio__project {
 		width: 100%;
+	}
+
+	/* || CONTACT */
+	.contact .contact__info a {
+		word-wrap: break-word;
 	}
 }
 
