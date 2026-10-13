@@ -369,7 +369,7 @@ svg {
 @media screen and (max-width: 720px) {
 	/* || GLOBAL */
 	.container {
-		width: 95%;
+		width: 99%;
 	}
 	.special-heading {
 		font-size: 3rem;
